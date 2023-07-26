@@ -31,10 +31,60 @@
             font-family: 'Manrope', sans-serif;
         }
     </style>
+    <!-- fav icon  -->
+    <link rel="icon" type="image/x-icon" href="./Assets/logo.png">
 </head>
 
-<body>
+<body class="font-manrope">
+    <!-- header here  -->
+    <header>
+        <!-- nav bar here  -->
+        <nav>
+            <div class="md:bg-color1 flex justify-between max-w-screen-2xl mx-auto rounded-[600px] items-center mt-14">
+                <div class="items-start-start hidden md:flex lg:flex lg:ml-10 md:ml-5">
+                    <ul class="menu grid md:grid-cols-2 lg:grid-cols-4">
+                        <li><a class="text-white text-lg font-medium">Home</a></li>
+                        <li><a class="text-white text-lg font-medium">About Us</a></li>
+                        <li><a class="text-white text-lg font-medium">Shop</a></li>
+                        <li><a class="text-white text-lg font-medium">All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center">
+                    <img src="./Assets/logo.png" alt="" class="">
+                    <a class="btn btn-ghost sm:text-2xl lg:text-4xl font-bold md:text-white sm:text-black mr-7">Fruit
+                        Burst</a>
+                </div>
+                <div class="items-center flex justify-between">
+                    <div class="dropdown dropdown-left">
+                        <label tabindex="0" class="btn btn-ghost md:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-color1 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                            <li><a>
+                                    <div class="">
+                                        <i class="fa-solid fa-magnifying-glass absolute mt-[18px] ml-36"></i>
+                                        <input type="text" placeholder="Search Here"
+                                               class="input text-left text-xs rounded-[50px] px-4 pl-7" />
+                                    </div>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="hidden md:inline lg:inline">
+                        <i
+                           class="fa-solid fa-magnifying-glass absolute lg:mt-10 lg:ml-[340px] md:ml-36 md:mt-[33px]"></i>
+                        <input type="text" placeholder="Search Here"
+                               class="input text-left text-xs rounded-[50px] px-4 pl-7 lg:my-6 lg:mr-10 md:mr-6 md:my-4 lg:w-96" />
+                    </div>
+                </div>
 
+            </div>
+        </nav>
+    </header>
 </body>
 
 </html>
